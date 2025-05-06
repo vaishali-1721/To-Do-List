@@ -1,0 +1,20 @@
+<form action="/tasks/add" method="post">
+    <label for="title">Task Title:</label> <!-- Changed from "name" to "title" -->
+    <input type="text" id="title" name="title" required> <!-- Changed from "name" to "title" -->
+
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required>
+
+    <label for="dueDate">Due Date:</label>
+    <input type="date" id="dueDate" name="dueDate" required>
+
+    <label for="status">Status:</label>
+    <select id="status" name="status" required>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+        <option value="Overdue">Overdue</option>
+    </select>
+
+    <button type="submit">Add Task</button>
+</form>
